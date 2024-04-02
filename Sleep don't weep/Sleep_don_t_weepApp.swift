@@ -11,7 +11,7 @@ import SwiftUI
 struct Sleep_don_t_weepApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CoordinatorView()
         }
     }
 }
