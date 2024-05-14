@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct CoordinatorView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @EnvironmentObject var viewModel: AppViewModel
 
-#Preview {
-    CoordinatorView()
+    @State private var isActive = false
+   
+    var body: some View {
+        if isActive {
+            ContentView()
+        } else {
+            IntroView()
+        }
+    }
 }

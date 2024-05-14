@@ -8,11 +8,45 @@
 import SwiftUI
 
 struct IntroView: View {
+    @State private var isActive = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+        ZStack {
+            
+            if self.isActive {
+                ContentView()
+            } else {
+                Color.black
+                    .ignoresSafeArea()
+                VStack {
+                    Text ("""
+Sleep
+Don't weep
+My sweet
+Love
 
-#Preview {
-    IntroView()
+- Damien Rice
+""")
+                    .foregroundStyle(.white)
+                    
+                }
+            }
+        }
+        .onAppear {
+            let hasLaunchedBefore = UserDefaults.standard.bool(forKey: "hasLaunchedBefore")
+            if hasLaunchedBefore {
+                withAnimation {
+                    self.isActive = true
+                }
+            } else {
+                UserDefaults.standard.set(true, forKey: "hasLaunchedBefore")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    withAnimation {
+                        self.isActive = true
+                    }
+                }
+            }
+        }
+    }
+    
 }

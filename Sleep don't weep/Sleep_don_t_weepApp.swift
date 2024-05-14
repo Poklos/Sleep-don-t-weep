@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Sleep_don_t_weepApp: App {
+    
     var body: some Scene {
         WindowGroup {
             CoordinatorView()
+                .environmentObject(AppViewModel())
         }
     }
 }

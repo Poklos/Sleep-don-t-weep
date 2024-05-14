@@ -7,18 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F03D569A2BAB1C5E0019A979 /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D56992BAB1C5E0019A979 /* TimersView.swift */; };
+		F03D569C2BACA6150019A979 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03D569B2BACA6150019A979 /* AppViewModel.swift */; };
 		F08E0D3E2B8BB2CF000A0924 /* Sleep_don_t_weepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E0D3D2B8BB2CF000A0924 /* Sleep_don_t_weepApp.swift */; };
 		F08E0D402B8BB2CF000A0924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E0D3F2B8BB2CF000A0924 /* ContentView.swift */; };
 		F08E0D422B8BB2D1000A0924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08E0D412B8BB2D1000A0924 /* Assets.xcassets */; };
 		F08E0D452B8BB2D1000A0924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F08E0D442B8BB2D1000A0924 /* Preview Assets.xcassets */; };
+		F08E0D522B8E7843000A0924 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E0D512B8E7843000A0924 /* IntroView.swift */; };
+		F08E0D542B8E7BF4000A0924 /* CoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08E0D532B8E7BF4000A0924 /* CoordinatorView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F0F2BA0A2B9671F30080E124 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F03D56992BAB1C5E0019A979 /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimersView.swift; path = "Sleep don't weep/TimersView.swift"; sourceTree = SOURCE_ROOT; };
+		F03D569B2BACA6150019A979 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		F047C9C02BB373AB005A9D84 /* Sleep-don-t-weep-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sleep-don-t-weep-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F08E0D3A2B8BB2CF000A0924 /* Sleep don't weep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sleep don't weep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08E0D3D2B8BB2CF000A0924 /* Sleep_don_t_weepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sleep_don_t_weepApp.swift; sourceTree = "<group>"; };
 		F08E0D3F2B8BB2CF000A0924 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F08E0D412B8BB2D1000A0924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F08E0D442B8BB2D1000A0924 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F08E0D512B8E7843000A0924 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		F08E0D532B8E7BF4000A0924 /* CoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +73,13 @@
 		F08E0D3C2B8BB2CF000A0924 /* Sleep don't weep */ = {
 			isa = PBXGroup;
 			children = (
+				F047C9C02BB373AB005A9D84 /* Sleep-don-t-weep-Info.plist */,
 				F08E0D3D2B8BB2CF000A0924 /* Sleep_don_t_weepApp.swift */,
+				F08E0D512B8E7843000A0924 /* IntroView.swift */,
+				F08E0D532B8E7BF4000A0924 /* CoordinatorView.swift */,
 				F08E0D3F2B8BB2CF000A0924 /* ContentView.swift */,
+				F03D56992BAB1C5E0019A979 /* TimersView.swift */,
+				F0F2B9F22B9643FD0080E124 /* View Models */,
 				F08E0D412B8BB2D1000A0924 /* Assets.xcassets */,
 				F08E0D432B8BB2D1000A0924 /* Preview Content */,
 			);
@@ -67,6 +94,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F0F2B9F22B9643FD0080E124 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				F03D569B2BACA6150019A979 /* AppViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +112,7 @@
 				F08E0D362B8BB2CF000A0924 /* Sources */,
 				F08E0D372B8BB2CF000A0924 /* Frameworks */,
 				F08E0D382B8BB2CF000A0924 /* Resources */,
+				F0F2BA0A2B9671F30080E124 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -138,7 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F08E0D402B8BB2CF000A0924 /* ContentView.swift in Sources */,
+				F03D569A2BAB1C5E0019A979 /* TimersView.swift in Sources */,
+				F03D569C2BACA6150019A979 /* AppViewModel.swift in Sources */,
 				F08E0D3E2B8BB2CF000A0924 /* Sleep_don_t_weepApp.swift in Sources */,
+				F08E0D522B8E7843000A0924 /* IntroView.swift in Sources */,
+				F08E0D542B8E7BF4000A0924 /* CoordinatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,16 +310,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Sleep don't weep/Preview Content\"";
 				DEVELOPMENT_TEAM = SMTY27WFRR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sleep-don-t-weep-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sleep don't weep";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +333,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kopiujwklej.Sleep-don-t-weep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -299,16 +349,22 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Sleep don't weep/Preview Content\"";
 				DEVELOPMENT_TEAM = SMTY27WFRR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sleep-don-t-weep-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Sleep don't weep";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +372,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.kopiujwklej.Sleep-don-t-weep";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
